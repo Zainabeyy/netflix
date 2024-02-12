@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: center;
+}
+/* header */
+.container {
+  background-image: url(sources/mainbackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  background-image: linear-gradient(#000000c5, #0000),
+    linear-gradient(#0000, #000000af);
+  padding: 24px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+img.logo {
+  width: 89px;
+  height: auto;
+}
+a.signin {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  background-color: #f00;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+h1 {
+  margin: 64px 0px 16px;
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+p.big {
+  margin: 32px auto 20px;
+  min-width: 300px;
+  line-height: 1.6rem;
+}
+/* input and label */
+input {
+  padding: 16px 14px 4px;
+  width: 84%;
+  background-color: #141414b6;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+  line-height: 1.5rem;
+  font-weight: 200;
+  border: 1px solid #ffffff6c;
+  border-radius: 5px;
+  margin: 0px auto 20px;
+  z-index: 11;
+}
+button {
+  background-color: #f00;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  max-width: 200px;
+  padding: 14px;
+  margin: 0px auto 20px;
+  border: none;
+  border-radius: 5px;
+}
+.emailid {
+  position: relative;
+}
+label {
+  font-size: 1rem;
+  position: absolute;
+  top: -8px;
+  left: 8%;
+  color: #ffffffb3;
+  font-weight: 200;
+  padding: 20px 16px;
+  transition: 0.2s;
+}
+.emailid input:focus ~ label,
+.emailid input:valid ~ label {
+  top: -18px;
+  font-size: 0.75rem;
+}
+.signin:hover,
+button:hover {
+  background-color: rgb(175, 5, 5);
+}
+hr {
+  border: 5px solid #232323;
+}
+/* article 1 */
+.part1 {
+  padding: 56px 0px;
+}
+h2 {
+  font-size: 2rem;
+}
+article p {
+  margin: 16px;
+}
+.tv {
+  margin: auto;
+  padding: 56px 0px 18%;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 90%;
+}
+.tvimg {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+video {
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+}
+/* article 2 */
+.part2 {
+  padding: 56px 20px;
+}
+.strangerthingdown {
+  margin: auto;
+  position: relative;
+}
+img.mili {
+  width: 100%;
+}
+.stdown {
+  position: absolute;
+  bottom: 8%;
+  left: 17%;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  width: 65%;
+  margin: auto;
+  padding: 4px 10px;
+  border: 2px solid #808080b3;
+  border-radius: 12px;
+}
+.stdown img {
+  height: 3rem;
+  margin: 0px 1rem 0px 0px;
+}
+.textdown {
+  flex-grow: 1;
+}
+.stdown p {
+  margin: 0px;
+  text-align: left;
+}
+#stranger {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+#download {
+  font-size: 0.75rem;
+  color: #0071eb;
+}
+img.downloading {
+  margin: 0px;
+}
+/* article 3 and 4 */
+.same {
+  padding: 56px 24px;
+}
+/* article 4 */
+.part4 img {
+  width: 100%;
+}
+/* article faq */
+.faq {
+  padding: 56px 24px;
+}
+details {
+  text-align: left;
+  width: 100%;
+}
+summary {
+  background-color: #2d2d2d;
+  padding: 24px;
+  margin: 8px 0px 0px;
+  border-bottom: 1px solid #000;
+  list-style: none;
+  position: relative;
+  transition: 0.2s ease;
+}
+summary:hover {
+  background-color: #424242;
+}
+details summary::after {
+  content: "+";
+  font-size: 2.5rem;
+  position: absolute;
+  top: 10px;
+  right: 24px;
+  transition: transform 0.2s;
+}
+details[open] summary::after {
+  transform: rotate(45deg);
+}
+details div {
+  background-color: #2d2d2d;
+  padding: 1px 24px;
+}
+details p {
+  margin: 24px 0px;
+  font-size: 1rem;
+}
+form .ready {
+  margin: 48px 0px 14px;
+}
+/* footer */
+footer {
+  padding: 24px;
+  color: #ffffffb3;
+  text-align: left;
+}
+ul {
+  display: inline-flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+}
+ul li {
+  width: 50%;
+  list-style: none;
+}
+li a {
+  color: #ffffffb3;
+  font-size: 0.875rem;
+  margin: 16px 0px 0px;
+  line-height: 2.4rem;
+}
+li a:active {
+  color: #f00;
+}
+select {
+  width: 120px;
+  appearance: none;
+  padding: 6px 28px;
+  font-size: 1rem;
+  background-color: #141414b6;
+  border: 1px solid #ffffff6c;
+  border-radius: 5px;
+  color: #fff;
+  margin: 25px 0px;
+}
+.option {
+  position: relative;
+}
+.language {
+  position: absolute;
+  transform: scale(60%, 60%);
+  top: 28px;
+  left: 5px;
+  color: #fff;
+}
+.arrow {
+  position: absolute;
+  color: #fff;
+  top: 28px;
+  left: 90px;
+}
+*:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+footer form {
+  margin: 0px;
+}
+#name {
+  font-size: 1rem;
+}
+
+/* medium devices */
+@media only screen and (min-width: 600px) {
+  /* header */
+  header {
+    padding: 24px 32px;
+  }
+  h1 {
+    margin: 130px 0px 20px;
+  }
+  .big {
+    font-size: 1.2rem;
+  }
+  form {
+    margin: 0px auto 60px;
+  }
+  input {
+    display: inline;
+    width: 58%;
+    padding: 24px 16px 8px;
+    margin: 0px auto 20px;
+    font-size: 1.2rem;
+  }
+  .emailid {
+    display: inline;
+  }
+  button {
+    display: inline;
+    font-size: 1.34rem;
+    vertical-align: top;
+    padding: 16px 10px;
+    margin: 0px 10px;
+  }
+  label {
+    top: -28px;
+    left: 0px;
+  }
+  .emailid input:focus ~ label,
+  .emailid input:valid ~ label {
+    top: -40px;
+  }
+  /* article 1 */
+  video {
+    max-width: 90%;
+    max-height: auto;
+  }
+  /* article 2 */
+  img.mili {
+    width: 75%;
+  }
+  .stdown {
+    left: 25%;
+    width: 50%;
+  }
+  .stdown img {
+    height: 4rem;
+  }
+  #stranger {
+    font-size: 1rem;
+  }
+  #download {
+    font-size: 0.875;
+  }
+  /* article 3 and 4 */
+  .same {
+    padding: 56px 32px;
+  }
+  /* article 4 */
+  .part4 img {
+    width: 85%;
+  }
+}
+
+/* Large devices */
+@media only screen and (min-width: 960px) {
+  /* header */
+  .container {
+    background-size: 130%;
+    background-position: center;
+  }
+  header {
+    height: 90vh;
+  }
+  img.logo {
+    width: 148px;
+    height: inherit;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 750;
+    line-height: 4rem;
+    margin: 160px 50px 20px;
+  }
+  .small {
+    font-size: 1.5rem;
+  }
+  input {
+    width: 40%;
+  }
+  button {
+    font-size: 1.48rem;
+    font-weight: 400;
+    margin: 0px 10px;
+    padding: 15px 28px;
+  }
+  /* for all article */
+  article {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  /* article 1 */
+  .part1 {
+    padding: 32px;
+    justify-content: space-between;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  article p {
+    font-size: 1.5rem;
+    margin: 16px 0px;
+  }
+  /* article 2 */
+  .part2 {
+    padding: 72px 32px;
+    flex-direction: row-reverse;
+  }
+  .part2 h2 {
+    line-height: 3.5rem;
+  }
+  .strangerthingdown {
+    width: 100%;
+  }
+  img.mili {
+    width: 100%;
+  }
+  .stdown {
+    width: 70%;
+    left: 15%;
+  }
+  .stdown img {
+    height: 4.5rem;
+  }
+  /* articel 3 and 4 */
+  .same {
+    padding: 72px 10%;
+    justify-content: flex-start;
+    width: 65%;
+  }
+  /* article 4 */
+  .part4 {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  .part4 img {
+    width: 55%;
+  }
+  /* faq */
+  .faq {
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .ready {
+    font-size: 1.3rem;
+  }
+  .faq input {
+    width: 60%;
+  }
+  .faq label {
+    top: -22px;
+  }
+  .faq .emailid input:focus ~ label,
+  .faq .emailid input:valid ~ label {
+    top: -30px;
+  }
+  /* footer */
+  ul li {
+    width: 25%;
+  }
+}
+
+/* Extra Large Screen */
+@media only screen and (min-width: 1280px) {
+  header {
+    height: 80vh;
+    padding: 24px 180px;
+  }
+  h1 {
+    font-weight: 900;
+    font-size: 2.9rem;
+  }
+  #input {
+    width: 30%;
+  }
+  .part1 {
+    padding: 32px 156px;
+    justify-content: space-around;
+  }
+  .part2 {
+    padding: 32px 184px 32px 150px;
+  }
+  img.mili {
+    width: 95%;
+  }
+  .stdown {
+    width: 60%;
+    left: 16%;
+  }
+  .same {
+    padding: 72px 20%;
+  }
+  .part4 {
+    padding: 72px 10%;
+  }
+  .part4 img {
+    width: 50%;
+  }
+  .faq details {
+    width: 80%;
+  }
+  footer {
+    padding: 72px 10%;
+  }
+}
